@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+
+# Data: Years and corresponding cancer cases
+years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+cancer_cases = [50000, 52000, 54000, 58000, 60000, 65000, 70000, 75000, 80000, 85000, 92000]
+
+# Plot the data
+plt.figure(figsize=(10, 5))
+plt.plot(years, cancer_cases, marker='o', linestyle='-', color='red', label='Cancer Cases')
+
+# Add title and labels
+plt.title("Trend of Cancer Cases Over a Decade", fontsize=14)
+plt.xlabel("Year", fontsize=12)
+plt.ylabel("Number of Cases", fontsize=12)
+plt.grid(True, linestyle="--", alpha=0.6)
+plt.legend()
+
+# Show the plot
+plt.show()
